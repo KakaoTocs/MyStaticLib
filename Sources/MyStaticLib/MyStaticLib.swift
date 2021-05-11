@@ -4,6 +4,7 @@ struct MyStaticLib {
 
 public class MJTPrivateLibrary {
     public let shared = MJTPrivateLibrary()
+    public let text = "Hello"
     
     private init() {}
     
@@ -13,8 +14,6 @@ public class MJTPrivateLibrary {
 }
 
 public class MJTPublicLibrary {
-    public let shared = MJTPublicLibrary()
-    
     public init() {}
     
     public func log() {
